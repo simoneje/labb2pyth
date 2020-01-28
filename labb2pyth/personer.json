@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Sakeria Kaysa",
+        "efternamn": "Ahmed",
+        "användarnamn": "h19sakah",
+        "email": "h19sakah@du.se"
+    },
+    {
+        "name": "Simon",
+        "efternamn": "Alexandersson",
+        "användarnamn": "h19simal",
+        "email": "h19simal@du.se"
+    },
+    {
+        "name": "Michael",
+        "efternamn": "Andersson",
+        "användarnamn": "h19miand",
+        "email": "h19miand@du.se"
+    },
+    {
+        "name": "Mikael",
+        "efternamn": "Gustafsson",
+        "användarnamn": "h19mikgu",
+        "email": "h19mikgu@du.se"
+    },
+    {
+        "name": "Robert",
+        "efternamn": "Hysing Berg",
+        "användarnamn": "h19robbe",
+        "email": "h19robbe@du.se"
+    },
+    {
+        "name": "Daniel",
+        "efternamn": "Johansson",
+        "användarnamn": "h14djoha",
+        "email": "h14djoha@du.se"
+    },
+    {
+        "name": "Mhd Ghaith",
+        "efternamn": "Kashlan",
+        "användarnamn": "h19mhdka",
+        "email": "h19mhdka@du.se"
+    },
+    {
+        "name": "Victoria",
+        "efternamn": "Miocic",
+        "användarnamn": "h19vicmi",
+        "email": "h19vicmi@du.se"
+    },
+    {
+        "name": "Mikael",
+        "efternamn": "Mir",
+        "användarnamn": "h17mikmi",
+        "email": "h17mikmi@du.se"
+    },
+    {
+        "name": "Carl",
+        "efternamn": "Molin",
+        "användarnamn": "h19carmo",
+        "email": "h19carmo@du.se"
+    },
+    {
+        "name": "Robin",
+        "efternamn": "Molin",
+        "användarnamn": "h19robmo",
+        "email": "h19robmo@du.se"
+    },
+    {
+        "name": "Eric",
+        "efternamn": "Nildén",
+        "användarnamn": "h19ernil",
+        "email": "h19ernil@du.se"
+    },
+    {
+        "name": "Simon",
+        "efternamn": "Nordstrand",
+        "användarnamn": "h19simno",
+        "email": "h19simno@du.se"
+    },
+    {
+        "name": "Mattias",
+        "efternamn": "Norgren",
+        "användarnamn": "h19mnorg",
+        "email": "h19mnorg@du.se"
+    },
+    {
+        "name": "Kristoffer",
+        "efternamn": "Palmgren",
+        "användarnamn": "h19kripa",
+        "email": "h19kripa@du.se"
+    },
+    {
+        "name": "Simon",
+        "efternamn": "Rydvall",
+        "användarnamn": "h19simry",
+        "email": "h19simry@du.se"
+    },
+    {
+        "name": "Volkan",
+        "efternamn": "Türkkan",
+        "användarnamn": "h18votur",
+        "email": "h18votur@du.se"
+    },
+    {
+        "name": "Marko",
+        "efternamn": "Vasiljevic",
+        "användarnamn": "h19mavas",
+        "email": "h19mavas@du.se"
+    },
+    {
+        "name": "Linus",
+        "efternamn": "Westerback",
+        "användarnamn": "h19linwe",
+        "email": "h19linwe@du.se"
+    },
+    {
+        "name": "Johan",
+        "efternamn": "Åström",
+        "användarnamn": "h19astjo",
+        "email": "h19astjo@du.se"
+    },
+    {
+        "name": "Martin",
+        "efternamn": "Örtengren",
+        "användarnamn": "h19maror",
+        "email": "h19maror@du.se"
+    },
+    {
+        "name": "Forss",
+        "efternamn": "Forss",
+        "användarnamn": "Forss",
+        "email": "Forss"
+    }
+]
