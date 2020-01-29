@@ -1,10 +1,7 @@
 import json
-
 #from json import JSONEncoder
 
 dicken = []
-
-
 
 def ReadFileMeny(filename):
     global dicken
@@ -16,27 +13,10 @@ def ReadFileMeny(filename):
                 new_list.append(line)
     except FileNotFoundError:
         print(FileNotFoundError)   
-    for line in new_list:#line är varje rad i listan "element"
+    for line in new_list: #line är varje rad i listan "element"
         info = line.rstrip('\n').split(";")
         dicken.append({"name": info[0],"efternamn": info[1],"användarnamn": info[2],"email": info[3]})
-    # for a in dicken:
-    #     print(a)
-    return dicken
         
-    # print("Vill du spara denna dict till en json-fil? Y/N")
-    # val = ''
-    # val = str(input(val))
-    # if val == 'y':
-    #     SaveDictTillJson(dicken)
-    
-# def SaveDictTillJson(list):
-#     listan = list
-#     try:
-#         with open('./hej/personer.json', 'w', encoding="utf-8") as json_dicken:
-#             json.dump(listan, json_dicken,ensure_ascii=False, indent=4)
-#     except FileNotFoundError:
-#         print(FileNotFoundError)
-
 def VisaJsonData(filename):
     global dicken
     try:
@@ -96,3 +76,17 @@ def RemoveHuman():
 #         return self.name + ' ' + self.lastname + ' ' + self.username + ' ' + self.email
 #     #def info(self):
 #     #    print(f'din person heter{self.name.title}, har efternamn {self.lastname}')
+
+    # print("Vill du spara denna dict till en json-fil? Y/N")
+    # val = ''
+    # val = str(input(val))
+    # if val == 'y':
+    #     SaveDictTillJson(dicken)
+    
+# def SaveDictTillJson(list):
+#     listan = list
+#     try:
+#         with open('./hej/personer.json', 'w', encoding="utf-8") as json_dicken:
+#             json.dump(listan, json_dicken,ensure_ascii=False, indent=4)
+#     except FileNotFoundError:
+#         print(FileNotFoundError)

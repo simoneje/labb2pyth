@@ -13,13 +13,15 @@ def meny():
         module.ReadFileMeny('./hej/personer.csv')
         meny()
     elif val == 2:
-        visa = module.VisaJsonData('personer.json')
-        print(visa)
+        json_doc = module.VisaJsonData('personer.json')
+        print(json_doc)
         meny()        
     elif val == 3:
+        module.VisaJsonData('personer.json')
         module.CreateHuman()
         meny()
     elif val == 4:
+        module.VisaJsonData('personer.json')
         module.RemoveHuman()
         meny()
     elif val == 5:
