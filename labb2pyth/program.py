@@ -11,24 +11,20 @@ def meny():
     val = int(input(val),10)
     if val == 1:
         module.ReadFileMeny('./hej/personer.csv')
-        BackToMeny()
+        meny()
     elif val == 2:
         visa = module.VisaJsonData('personer.json')
         print(visa)
-        BackToMeny()        
+        meny()        
     elif val == 3:
         module.CreateHuman()
-        BackToMeny()
+        meny()
     elif val == 4:
         module.RemoveHuman()
-        BackToMeny()
+        meny()
     elif val == 5:
         module.SparaHuman('personer.json')
-        BackToMeny()
-
-def BackToMeny():
-    print("VILL DU GÅ TILLBAKA TILL MENYN?! Y/N")
-    val = input()
-    if val == 'Y' or val == 'y' or val == 'yes' or val == 'Yes':
         meny()
+
+
 meny()

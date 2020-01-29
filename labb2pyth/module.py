@@ -1,24 +1,26 @@
 import json
 
 #from json import JSONEncoder
-listan = []
+
 dicken = []
 
 
 
 def ReadFileMeny(filename):
+    global dicken
     filen = filename
+    new_list = []
     try:
         with open(filen, encoding="utf-8") as f_obj:
             for line in f_obj:
-                listan.append(line)
+                new_list.append(line)
     except FileNotFoundError:
         print(FileNotFoundError)   
-    for line in listan:#line är varje rad i listan "element"
+    for line in new_list:#line är varje rad i listan "element"
         info = line.rstrip('\n').split(";")
         dicken.append({"name": info[0],"efternamn": info[1],"användarnamn": info[2],"email": info[3]})
-    for a in dicken:
-        print(a)
+    # for a in dicken:
+    #     print(a)
     return dicken
         
     # print("Vill du spara denna dict till en json-fil? Y/N")
@@ -36,20 +38,23 @@ def ReadFileMeny(filename):
 #         print(FileNotFoundError)
 
 def VisaJsonData(filename):
+    global dicken
     try:
-        with open(filename, "w", encoding="utf-8") as sJson:
-            return json.load(sJson)
+        with open(filename, encoding="utf-8") as sJson:
+            dicken = json.load(sJson)
+            return dicken
     except FileNotFoundError as error:
         print(error)
 
 def SparaHuman(filename):
     try:
-        with open(filename, "w", encoding="utf-8") as sHuman:
-            json.dump(dicken, sHuman, ensure_ascii=False)
+        with open(filename, 'w', encoding="utf-8") as sHuman:
+            json.dump(dicken, sHuman, ensure_ascii=False, indent=2)
     except FileNotFoundError as error:
         print(error)
 
 def CreateHuman():
+    global dicken
     try:
         namn = input("Skriv in nytt namn: ")
         enamn = input("Skriv in efternamn: ")
@@ -65,6 +70,7 @@ def CreateHuman():
         print(ValueError)
 
 def RemoveHuman():
+    global dicken
     try:
         human = input("Skriv in efternamn på den du vill ta bort: ")
         for i in range(len(dicken)):
